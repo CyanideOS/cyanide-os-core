@@ -1,4 +1,2 @@
-# %%
-print("Hello")
-
-# %%
+def name():
+    print("Hello")
