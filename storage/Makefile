@@ -10,7 +10,8 @@ start:
 build: utilities
 
 move:
-	mv *.exe ./bin
+	mkdir bin -p
+	mv *.exe bin/
 
 utilities:
 	$(compiler) utilities/utilities.cpp $(compilerArgs) -o utilities.exe
