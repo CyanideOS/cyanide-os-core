@@ -14,6 +14,7 @@ move:
 
 utilities.dir:
 	$(compiler) utilities/mkdir.cpp $(compilerArgs) -o mkdir.exe
+	$(compiler) utilities/rmdir.cpp $(compilerArgs) -o rmdir.exe
 
 clean:
 	rm -rf /f *.obj
