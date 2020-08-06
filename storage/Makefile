@@ -1,20 +1,19 @@
 compiler = cl
-compilerArgs = /std:c++latest
+compilerArgs = /std:c++latest /O1 /Ot
 
 all: start build move clean
-	$(compiler) utilities/utilities.cpp $(compilerArgs) -o utilities.exe
 
 start:
 	clear
 
-build: utilities
+build: utilities.dir
 
 move:
 	mkdir bin -p
 	mv *.exe bin/
 
-utilities:
-	$(compiler) utilities/utilities.cpp $(compilerArgs) -o utilities.exe
+utilities.dir:
+	$(compiler) utilities/mkdir.cpp $(compilerArgs) -o mkdir.exe
 
 clean:
 	rm -rf /f *.obj
