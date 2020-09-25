@@ -12,8 +12,21 @@ def _getInstalledApplications():
 
 
 def _serveApplicationByPid(pid):
-    print(f"Serve {pid}")
     return jsonify({
-        "isStarted": True,
-        "isAlreadyServing": 42107,
+        "packageName": "microsoft",
+        "name": "Outlook",
+        "title": "Outlook",
+        "pid": pid,
+        "width": 70,
+        "height": 50,
+        "zIndex": 0,
+        "icon": '',
+        "positionY": 8,
+        "positionX": 18,
+        "isClosable": True,
+        "isMaximizable": True,
+        "isMinimizable": True,
+        "isModal": False,
+        "isOpenAtCenter": True,
+        "port": 4200,
     })
