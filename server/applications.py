@@ -24,7 +24,7 @@ def _serveApplicationByPid(pid):
         "width": 70,
         "height": 50,
         "zIndex": 0,
-        "icon": "icons/nutella/settings.png",
+        "icon": "icons/settings.png",
         "positionY": 8,
         "positionX": 18,
         "isClosable": True,
